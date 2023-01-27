@@ -1,0 +1,13 @@
+{
+  "name": "cplusplus-classes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "g++ -Wall -std=c++17 Account/main.cc -o GCompiled/account.o"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
