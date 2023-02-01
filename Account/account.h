@@ -10,9 +10,8 @@ private:
     float balance;
 
 public:
-    Account(){
-        name = "";
-        balance = 0.0;
+    Account()
+    : name {""}, balance {0.0} {
     }
     std::string get_name();
     float get_balance();
@@ -24,7 +23,7 @@ public:
 
 
 std::string Account::get_name(){
-        return name;
+    return name;
 }
 float Account::get_balance(){
     return balance;
@@ -33,16 +32,16 @@ void Account::set_name(std::string input_name){
 	name = input_name;
 }
 void Account::deposit(float amount){
-        balance += amount;
+    balance += amount;
 }
 bool Account::withdraw(float amount){
 
-        if(balance >= amount){
-                balance -= amount;
-                return true;
-        }
+    if(balance >= amount){
+            balance -= amount;
+            return true;
+    }
 
-        return false;
+    return false;
 }
 
 
