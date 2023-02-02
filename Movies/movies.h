@@ -36,6 +36,10 @@ void Movies::add_watch_count(std::string movie_name, size_t watch_count){
         }
     }
     std::cout << "found movie " << "(" << movie_name << "): " << found_movie << std::endl;
+
+    if(!found_movie){
+        std::cout << "cannot increase movie watches because it doesn't exist (or at least not yet)" << std::endl;
+    }
 }
 
 void Movies::display_movies(){

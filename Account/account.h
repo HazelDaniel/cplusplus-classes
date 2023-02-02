@@ -37,8 +37,8 @@ void Account::deposit(float amount){
 bool Account::withdraw(float amount){
 
     if(balance >= amount){
-            balance -= amount;
-            return true;
+        balance -= amount;
+        return true;
     }
 
     return false;

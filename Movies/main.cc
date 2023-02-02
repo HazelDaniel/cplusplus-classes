@@ -18,6 +18,7 @@ int main (int argc, char *argv[]){
     movies_list.add_watch_count("The Originals",3);
     movies_list.add_movie("Person Of Interest", "G");
     movies_list.add_watch_count("Person Of Interest",1);
+    movies_list.add_watch_count("Person Of Interest",1);
     show_movies(movies_list);
 
     return 0;
